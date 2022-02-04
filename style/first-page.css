@@ -1,0 +1,21 @@
+.first-page{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-page div{
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-page div:hover{
+    background-color: aliceblue;
+    flex-grow: 3;
+}

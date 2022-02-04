@@ -1,66 +1,23 @@
 body, h1, h2{
     margin: 0;
+    cursor: none;
+    cursor: url('../assets/cursor.png');
+    overflow-x: hidden;
 }
 
-header{
+.cursor {
+    position: absolute;
+    border: solid 1px #ccc;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;  
+    z-index: 5;
+}
+
+main{
     width: 100vw;
-    position: absolute;
 }
 
-header h2{
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1.8em;
-    padding: 15px 25px;
-}
-
-.landing{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.landing h1{
-    font-family:monospace;
-    font-weight: 100;
-    font-size: 2.8em;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding: 0;
-}
-
-.landing h1 .writingAnim{
-    display: inline-block;
-    width: 1px;
-    align-self: stretch;
-    margin-left: 1px;
-    background-color: rgba(0, 0, 0, 1);
-    animation: blink 1s ease-in infinite;
-}
-
-@keyframes blink {
-    50%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    100%{
-        background-color: rgba(0, 0, 0, 1);
-    }
-}
-
-.landingPink{
-    position: absolute;
-    left: 20vw;
-    bottom: 0vh;
-    height: 45vh;
-}
-
-.landingBlue{
-    position: absolute;
-    right: 0vw;
-    top: 15vh;
-    width: 25vw;
+footer{
+    text-align: center;
 }
