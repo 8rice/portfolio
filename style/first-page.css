@@ -1,21 +1,78 @@
 .first-page{
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.first-page div{
-    border: 1px solid black;
-    width: 100%;
+.pinkRectBottom{
+    position: absolute;
+    left: 20vw;
+    height: 45vh;
+    z-index: -1;
+}
+
+.first-page .project{
     height: 100vh;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+    width: 50%;
 }
 
-.first-page div:hover{
-    background-color: aliceblue;
-    flex-grow: 3;
+.first-page .project:hover{
+    background-color: rgba(0,0,0, 0.05);
+    cursor: url(../assets/cursor2.png), default;
+    width: 200%;
+}
+
+.first-page .project h3{
+    display: flex;
+}
+
+.first-page .project:hover > h3{
+    display: none;
+}
+
+.first-page .project .project-content{
+    display: none;
+}
+
+.first-page .project:hover > .project-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    animation: appearanceText 2s ease;
+    font-size: 15px;
+    width: 100%;
+}
+
+@keyframes appearanceText{
+    0%{
+        opacity: 0;
+        font-size: 0px;
+    }
+    40%{
+        font-size: 15px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.first-page .project .project-content div{
+    width: 40%;
+}
+
+.first-page .project .project-content img{
+    width: 40%;
+}
+
+.first-page .project .project-content .project-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
