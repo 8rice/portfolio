@@ -7,8 +7,8 @@ window.addEventListener('scroll', function (e) {
     // console.log(window.scrollY)
     console.log(pinkRectBottom.offsetTop)
     if (pinkRectBottom.offsetTop < firstPage.offsetTop - 5) {
-        pinkRectBottom.style.top = window.innerHeight / 1.5 + window.scrollY / 3
+        pinkRectBottom.style.top = 50 + window.innerHeight / 1.7 + window.scrollY / 3
     } else {
-        pinkRectBottom.style.top = firstPage.offsetTop - 15
+        pinkRectBottom.style.top = firstPage.offsetTop - 5
     }
 });
