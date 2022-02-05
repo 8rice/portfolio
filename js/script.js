@@ -1,6 +1,6 @@
 let pinkRectBottom = document.querySelector('.first-page .pinkRectBottom')
 let firstPage = document.querySelector('.first-page')
-var y = 0
+let y = 0
 pinkRectBottom.style.top = 0
 
 window.addEventListener('scroll', function (e) {
