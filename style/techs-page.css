@@ -1,0 +1,77 @@
+.techs-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.techs-page h2{
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.techs-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    text-align: center;
+    cursor: url(../assets/cursor2.png), default;
+    background-color: whitesmoke;
+    transition: ease .6s;
+}
+
+@media (max-width:700px) {
+    .tech{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+.tech:nth-child(2n):hover{
+    background-color: #3CC4FF;
+}
+
+.tech:nth-child(2n+1):hover{
+    background-color: #FF46AA;
+}
+
+.tech:hover > img{
+    display: none;
+}
+
+.tech:hover > h3{
+    transition: ease 5s;
+    display: flex;
+    color: white;
+}
+
+.tech img{
+    display: flex;
+    width: 15%;
+}
+
+.tech h3{
+    display: none;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+@media (max-width:700px) {
+    .tech h3{
+        font-size: 1.3em;
+    }
+}
