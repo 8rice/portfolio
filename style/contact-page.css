@@ -1,0 +1,12 @@
+.contact-page{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+}
+
+.infos{
+    margin: auto;
+}
