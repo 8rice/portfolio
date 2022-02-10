@@ -101,9 +101,16 @@
 }
 
 .first-page .project .project-content img{
+transition: 0.4s ease;
+}
+
+.first-page .project-left .project-content img{
     width: 40%;
     box-shadow: rgba(50, 50, 93, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.6) 0px 3px 7px -3px;
-    transition: 0.4s ease;
+}
+
+.first-page .project-right .project-content img{
+    width: 20%;
 }
 
 .first-page .project .project-content img:hover{
@@ -120,6 +127,19 @@
     font-size: 1.2em;
     word-spacing: 5;
     line-height: 2em;
+}
+
+.first-page .project-right .project-content .project-informations div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-page .project-right .project-content .project-informations div img{
+    flex-grow: 1;
 }
 
 .project-name{
