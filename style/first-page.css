@@ -63,14 +63,12 @@
     width: 200%;
 }
 
-.first-page .project h3{
-    display: flex;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.first-page .project h2{
     font-weight: 600;
     font-size: 1.8em;
 }
 
-.first-page .project:hover > h3{
+.first-page .project:hover > h2{
     display: none;
 }
 
@@ -119,8 +117,6 @@
     justify-content: space-around;
     height: 100%;
     width: 40%;
-    font-family: monospace;
-    font-weight: 100;
     font-size: 1.2em;
     word-spacing: 5;
     line-height: 2em;

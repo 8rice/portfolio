@@ -8,6 +8,16 @@ body, h1, h2{
     overflow-x: hidden;
 }
 
+h2{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+p, h1, h3{
+    font-family: monospace;
+    font-weight: 100;
+}
+
 main{
     width: 100vw;
 }

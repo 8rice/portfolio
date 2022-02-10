@@ -6,10 +6,6 @@
     height: fit-content;
 }
 
-.techs-page h2{
-    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .techs-list{
     display: flex;
     flex-direction: row;
@@ -65,7 +61,6 @@
 
 .tech h3{
     display: none;
-    font-family: monospace;
     font-weight: 400;
     font-size: 1.6em;
 }
