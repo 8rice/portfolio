@@ -6,6 +6,10 @@
     height: fit-content;
 }
 
+.techs-page h2{
+    padding: 50px 0px;
+}
+
 .techs-list{
     display: flex;
     flex-direction: row;
