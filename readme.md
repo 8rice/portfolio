@@ -1,2 +1,2 @@
 Portfolio Site Brice Sabuco 2022  
-Go visit : URL
+Go visit : https://bricesabuco.netlify.app/
