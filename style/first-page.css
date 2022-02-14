@@ -68,6 +68,7 @@
     .first-page .project{
         width: 100%;
         flex-wrap: wrap;
+        height: fit-content;
     }
 
     .first-page .project h2{
