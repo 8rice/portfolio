@@ -21,6 +21,17 @@
     filter: blur(4px);
 }
 
+@media (max-width:750px) {
+    .blueRectSide{
+        width: 35vh;
+        animation: none;
+    }
+
+    .pinkRectBottom{
+        display: none;
+    }
+}
+
 @keyframes blueRectRotate {
     0%{
         transform: rotate(-5deg);
@@ -48,6 +59,34 @@
     transition: 1s ease;
     width: 50%;
 }
+/* INFERIOR TO 750px */
+@media (max-width:750px) {
+    .first-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-page .project{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .first-page .project h2{
+        display: none;
+    }
+    .project-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        animation: appearanceText 2s ease;
+        font-size: 15px;
+        width: 100%;
+    }
+    .first-page .project .project-content .project-informations p{
+        font-size: 0.8em;
+    }
+
+}
 
 .first-page .project-right{
     background-color: rgba(0, 0, 0, 0.02);
@@ -57,33 +96,37 @@
     background-color: rgba(0, 0, 0, 0.01);
 }
 
-.first-page .project:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: url(../assets/cursor2.png), default;
-    width: 200%;
-}
 
-.first-page .project h2{
-    font-weight: 600;
-    font-size: 1.8em;
-}
+/* SUPERIOR TO 750px */
+@media (min-width:750px) {
+    .first-page .project:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: url(../assets/cursor2.png), default;
+        width: 200%;
+    }
 
-.first-page .project:hover > h2{
-    display: none;
-}
-
-.first-page .project .project-content{
-    display: none;
-}
-
-.first-page .project:hover > .project-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    animation: appearanceText 2s ease;
-    font-size: 15px;
-    width: 100%;
+    .first-page .project h2{
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+    
+    .first-page .project:hover > h2{
+        display: none;
+    }
+    
+    .first-page .project .project-content{
+        display: none;
+    }
+    
+    .first-page .project:hover > .project-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        animation: appearanceText 2s ease;
+        font-size: 15px;
+        width: 100%;
+    }
 }
 
 @keyframes appearanceText{
