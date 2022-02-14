@@ -20,6 +20,9 @@ header h2{
 header .contact{
     background-color: rgba(255, 70, 170,0.1);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .contact a{
