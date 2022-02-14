@@ -11,6 +11,11 @@ header h2{
     padding: 0px 10px;
     transition: ease 0.4s;
 }
+@media (max-width: 750px) {
+    header h2{
+        margin: 15px 10px;
+    }
+}
 
 header .contact{
     background-color: rgba(255, 70, 170,0.1);
