@@ -1,3 +1,9 @@
+.title-second-page{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
 .second-page{
     display: flex;
     flex-direction: row;
